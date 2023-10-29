@@ -1,0 +1,7 @@
+flask
+sqlalchemy
+sqlalchemy-cockroachdb 
+Flask-SQLAlchemy
+psycopg2-binary
+sqlalchemy
+sqlalchemy-cockroachdb
