@@ -41,6 +41,15 @@ class PlayerRoom(db.Model):
 
 ##############
 
+if __name__ == '__main__':
+    # make accessible outside of vm
+    app.run(host='0.0.0.0', port=5000)
+
+# for testing purposes
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
 @app.get("/register_new_device")
 def register_new_device():
     # Database lookup, find the smallest unique number
